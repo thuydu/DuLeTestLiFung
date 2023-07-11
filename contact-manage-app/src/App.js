@@ -1,4 +1,5 @@
-import "./app.css";
+import logo from "./img/logo-white.svg";
+import "./css/app.css";
 import { useEffect, useState } from "react";
 import { Users } from "./users";
 import Table from "./Table";
@@ -15,16 +16,27 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p className="text-center fs-2 text-uppercase fw-bold">
-          This is the app to manage customer
-        </p>
+        <div className="row">
+          <div className="col-md-6">
+            <img className="logo" src={logo} alt="Li Fung" />
+          </div>
+
+          <div className="col-md-6">
+            <p className="text-center fs-3 text-uppercase fw-bold">
+              This is the app to manage customer
+            </p>
+          </div>
+        </div>
         <div className="input-search-content container">
-           <label for="exampleDataList" className="form-label fw-bold">Filter the customer by way input on the box below:</label>
-            <input className="search form-control"
+            <label for="exampleDataList" className="form-label fw-bold">
+              Filter the customer by way input on the box below:
+            </label>
+            <input
+              className="search form-control"
               placeholder="Search..."
               onChange={(e) => setQuery(e.target.value.toLowerCase())}
             />
-        </div>
+          </div>
       </header>
 
       <main className="container">
@@ -35,9 +47,10 @@ function App() {
 
       <footer>
         <div className="d-block pt-5 pb-5 text-center">
-          © 2023 Li &amp; Fung Limited. Incorporated in Bermuda with limited liability. All rights reserved.
+          © 2023 Li &amp; Fung Limited. Incorporated in Bermuda with limited
+          liability. All rights reserved.
         </div>
-       </footer>
+      </footer>
     </div>
   );
 }
