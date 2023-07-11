@@ -16,18 +16,24 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <div className="row">
-          <div className="col-md-6">
+        <div className="container">
+          <div className="row">
+          <div className="col-md-4">
             <img className="logo" src={logo} alt="Li Fung" />
           </div>
 
-          <div className="col-md-6">
-            <p className="text-center fs-3 text-uppercase fw-bold">
+          <div className="col-md-8">
+            <p className="fs-3 text-uppercase fw-bold">
               This is the app to manage customer
             </p>
           </div>
+          </div>
         </div>
         <div className="input-search-content container">
+        <div className="row">
+          <div className="col-md-4">
+            </div>
+            <div className="col-md-8">
             <label for="exampleDataList" className="form-label fw-bold">
               Filter the customer by way input on the box below:
             </label>
@@ -36,6 +42,8 @@ function App() {
               placeholder="Search..."
               onChange={(e) => setQuery(e.target.value.toLowerCase())}
             />
+            </div>
+          </div>
           </div>
       </header>
 
