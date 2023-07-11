@@ -1,0 +1,50 @@
+.app {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 900px;
+}
+
+header {
+  padding: 3rem 10rem 2rem; 
+  position: sticky;
+  top: 0;
+  transition: top 0.5s ease-in-out;
+  background-color:  #fff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  z-index: 10001;
+}
+
+.search {
+  padding: 10px;
+  font-size: 20px;
+}
+
+.input-search-content{
+  max-width: 500px;
+}
+
+.list {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.listItem {
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: #444;
+  font-weight: 300;
+}
+
+.table-listing{
+  margin-top: 4rem;
+}
+
+footer{
+  z-index: 5;
+  position: relative;
+  background-color: #3d3d3d;
+  color: #fff;
+}
