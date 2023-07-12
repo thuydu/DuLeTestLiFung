@@ -1,6 +1,6 @@
 import logo from "./img/logo-white.svg";
 import "./css/app.css";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Users } from "./users";
 import Table from "./Table";
 
